@@ -7,16 +7,17 @@
 
 
 <body>
-    <h2>Shopping List! </h2>
+    <h1><b>Weekly shopping...</b></h1>
+    <h2>My shopping List</h2>
 
-    <form action="someServlet" method="post">
-        Nume produs:<input type="text" name="produs"/><br />
-        Cantitate:<input type="text" name="cantitate"/><br />
-        <input type="submit" value="Submit"/>&nbsp;
+    <form action="MyList" method="post">
+        Product:<input type="text" name="Product"/><br />
+        Quantity:<input type="text" name="Quantity"/><br />
+        <input type="submit" value="Add to list"/>&nbsp;
     </form>
 
-    <form action="someServlet" method="get">
-        <input type="submit" value="GetInfo"/>
+    <form action="MyList" method="get">
+        <input type="submit" value="Show list"/>
     </form>
 </body>
 </html>
