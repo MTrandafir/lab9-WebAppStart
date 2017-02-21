@@ -1,12 +1,32 @@
 h1
 {
     color:darkblue;
-    font-size: xx-small;
+    font-size: large;
 }
 body {
-    background-color: skyblue;
+    background-color: lightgrey;
 }
-h2{text-align: center;
-    color: black;
-    font-size: larger;
+h2{
+    color: deeppink;
+}
+h3 {
+    color: darkblue;
+}
+
+ul,ol{
+    margin-left: 25px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr {
+    nth-child(even);
+    background-color: #dddddd;
 }
