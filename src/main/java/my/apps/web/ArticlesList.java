@@ -86,7 +86,7 @@ public class ArticlesList extends HttpServlet {
                                          out.println("<td>"+article.getProduct()+"</td>");
                                          out.println("<td>"+article.getQuantity()+"</td>");
 
-                                         out.println("<td><a target='_blank' href='"+article.getProduct()+"'>open</a></td>");
+                                         out.println("<td><a href='/delete?id="+article.getId()+"'><input type=\"submit\" value=\"Delete\"/></a></td>");
                                          out.println("</tr>");
                          }
          out.println("</table>");
