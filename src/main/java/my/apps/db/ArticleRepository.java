@@ -7,10 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * @author flo
- * @since 17/01/2017.
- */
+
 public class ArticleRepository {
 
     // 1. define connection params to db

@@ -1,13 +1,14 @@
 h1
-{
-    color:darkblue;
-    font-size: large;
+{   text-align: center;
+    color:black;
+    font-size: 50px;
+
 }
-body {
-    background-color: lightgrey;
+body {text-align: center;
+    background-color: lightblue;
 }
 h2{
-    color: deeppink;
+    color: darkslategray;
 }
 h3 {
     color: darkblue;
@@ -28,5 +29,6 @@ td,th {
 }
 tr {
     nth-child(even);
-    background-color: #dddddd;
+
 }
+

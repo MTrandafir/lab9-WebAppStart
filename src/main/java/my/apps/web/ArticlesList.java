@@ -16,6 +16,8 @@ public class ArticlesList extends HttpServlet {
 
     private int counter;
 
+
+
     private ArticleRepository articleRepository = new ArticleRepository();
 
     @Override
@@ -38,9 +40,9 @@ public class ArticlesList extends HttpServlet {
 
             Article article = new Article(Product, Quantity);
 
-            out.println("<h3>Adaugare in curs...</h3>");
+            out.println("<h3>The product has been added!</h3>");
             articleRepository.insert(article);
-            out.println("<b> + article.toString() + '</b><br />");
+            out.println("<b> </b><br />");
         }catch (ClassNotFoundException e){
             out.println("<div class='error'><b>Unable initialize database connection<b></div>");
         } catch (SQLException e) {
@@ -64,6 +66,8 @@ public class ArticlesList extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         counter++;
+
+
         resp.setContentType("text/html;charset=UTF-8");
         PrintWriter out = resp.getWriter();
         out.println("<head>");
@@ -71,7 +75,7 @@ public class ArticlesList extends HttpServlet {
         addStyle(out);
         out.println("</head>");
      try {
-         out.println("<h3>Articles...</h3>");
+         out.println("<h3>Articles</h3>");
                      out.println("<table>");
                      out.println("<tr>");
                      out.println("<th>Id</th>");
